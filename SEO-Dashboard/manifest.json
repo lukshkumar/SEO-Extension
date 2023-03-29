@@ -1,0 +1,28 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "img/logo.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "js/linkbuilder-min.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "description": "Buzzmatic SEO Helper Extension for Internal Use",
+   "icons": {
+      "128": "img/logo.png",
+      "19": "img/logo.png",
+      "256": "img/logo.png",
+      "48": "img/logo.png",
+      "512": "img/logo.png"
+   },
+   "manifest_version": 2,
+   "name": "Buzzmatic SEO Helper",
+   "permissions": [ "activeTab", "storage", "contextMenus", "https://*/*", "http://*/*" ],
+   "short_name": "Buzzmatic SEO Helper",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.1"
+}

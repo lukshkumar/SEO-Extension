@@ -1,0 +1,29 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "img/icon48.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "js/linkbuilder-min.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+   "description": "Weniger klicken. Mehr schaffen.",
+   "icons": {
+      "128": "img/icon128.png",
+      "19": "img/icon19.png",
+      "256": "img/icon256.png",
+      "48": "img/icon48.png",
+      "512": "img/icon512.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqF9vFC0fDmoSwDaIx7PIC07lS7tGdKDJO5jUXfH8blcRTiap0My/adTyd0TK5ncd9+6lMT9AvQblVIQkb9S1s+6/G0DkaG4U4qfXEpOWskxriQwqdNqowKhAxmk6IT9Ff2IKCmUlwsvRyPkBuNI0W/UGlg4zCqDNR9g2BiSz2RLvP8JeDqaqVvf9nYpWGG0vnyKh1bBjCs1gqoUuTY3ziJdyfxD72RiPWQEI95hA9OKqORmK+LtZscl8w0s28WIuXw4MAyvnX7yz0d5OeYd9IypwRc3Zr8B9reYckI5wk0jBGoH/RhuCxdcYOyjHZoGrNIUeflxbS8W7tfSHTkcgkwIDAQAB",
+   "manifest_version": 2,
+   "name": "SEO-Dashboard von TechnicalSEO.de",
+   "permissions": [ "activeTab", "storage", "contextMenus", "https://*/*", "http://*/*" ],
+   "short_name": "SEO-Dashboard",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.4.0"
+}
